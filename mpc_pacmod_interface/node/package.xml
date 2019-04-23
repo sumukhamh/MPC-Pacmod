@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mpc_pacmod_interface</name>
+  <version>0.0.0</version>
+  <description>The autoware_pacmod_interface package</description>
+  <license>MIT</license>
+  <maintainer email="fjoseph@eng.ucsd.edu">Francis Joseph</maintainer>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>autoware_msgs</build_depend>
+  <build_depend>pacmod_msgs</build_depend>
+  <build_depend>mpc_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>autoware_msgs</build_export_depend>
+  <build_export_depend>pacmod_msgs</build_export_depend>
+  <build_export_depend>mpc_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>autoware_msgs</exec_depend>
+  <exec_depend>pacmod_msgs</exec_depend>
+  <exec_depend>mpc_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+</package>

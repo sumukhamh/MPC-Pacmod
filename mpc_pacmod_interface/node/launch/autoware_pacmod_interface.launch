@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Vehicle types are:
+       0: Polaris GEM/eLXD
+       1: Polaris Ranger
+       2: Lexus RX 450H
+       3: International Prostar+ 122 -->
+  <arg name="vehicle_type" default="0"/>
+    
+  <arg name="steering_stick" default="LEFT"/>
+        
+  <!-- 4.71239 is fast but jerky. Speed in rad/sec.-->
+  <arg name="steering_max_speed" default="3.3"/>
+
+  <!-- Scales raw joystick input -->
+  <arg name="accel_scale_val" default="1.0"/>
+
+  <!-- Scales raw joystick input -->
+  <arg name="brake_scale_val" default="1.0"/>
+
+  <!-- For GEM, 11.176m/s -->
+  <arg name="max_veh_speed" default="11.176" />
+
+  <group ns="pacmod_interface">
+    <node pkg="autoware_pacmod_interface" type="autoware_pacmod_interface_node" name="autoware_pacmod_interface">
+      <param name="vehicle_type" value="$(arg vehicle_type)"/>
+      <param name="steering_stick" value="$(arg steering_stick)"/>          
+      <param name="steering_max_speed" value="$(arg steering_max_speed)"/>
+      <param name="accel_scale_val" value="$(arg accel_scale_val)"/>
+      <param name="brake_scale_val" value="$(arg brake_scale_val)"/>
+      <param name="max_veh_speed" value="$(arg max_veh_speed)" />
+    </node>
+  </group>
+</launch>
