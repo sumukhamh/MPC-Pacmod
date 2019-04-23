@@ -3,7 +3,5 @@ This is the ROS package that implements MPC Controller based on reference trajct
 The control commands are published to the mpc_pacmod_interface node.
 
 References
-
 [https://github.com/udacity/CarND-MPC-Project](https://github.com/udacity/CarND-MPC-Project)
-
 [https://github.com/sumitbinnani/MPC-Control-for-Autonomous-Driving](https://github.com/sumitbinnani/MPC-Control-for-Autonomous-Driving)
